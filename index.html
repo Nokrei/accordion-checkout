@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap and FontAwesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/21ade58b52.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container-fluid pt-5 bg-darker">
+      <div class="container px-5">
+        <div class="row justify-content-between align-items-center pb-5">
+          <div class="col-md-3 blue-text">
+            <span>
+              <i class="fas fa-arrow-left"></i>
+              BACK
+            </span>
+          </div>
+          <div class="col-md-2 text-center">
+            <span>
+              <img src="./images/logo-sm.svg" alt="Astrolabs-logo" />
+            </span>
+          </div>
+          <div class="col-md-3 text-muted text-end">
+            SECURE CHECKOUT
+            <i class="fas fa-lock"></i>
+          </div>
+        </div>
+        <h3 class="text-center pb-5">Complete Your Purchase</h3>
+        <div class="row bg-bright p-1 position-relative box-shadow">
+          <div class="col">
+            <div class="row text-muted bg-darker p-3">
+              <div class="col-md-8">Item Name</div>
+              <div class="col-md-2">Item Price</div>
+              <div class="col-md-2 text-end">Actions</div>
+            </div>
+            <div class="row p-3 align-items-center">
+              <div class="col-md-2">
+                <div class="placeholder-box"></div>
+              </div>
+              <div class="col-md-6">
+                <h5>Coding Bootcamp</h5>
+                <p class="text-muted">Nov 12 - 25</p>
+              </div>
+              <div class="col-md-2">AED 2500</div>
+              <div class="col-md-2 text-end text-muted">Remove</div>
+            </div>
+            <div class="row p-3 text-end border-top">
+              <div class="col-md-10"></div>
+              <div class="col-md-2">
+                <p class="text-muted">Total</p>
+                <h5>AED 2500</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 pt-5">
+      <div class="row bg-bright pt-5 pb-5">
+        <div
+          class="col-md-12 text-center border rounded p-3 blue-text bg-bright"
+        >
+          <span> Have a discount code? Click here to enter it. </span>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <h5>Payment Method</h5>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-5 border rounded p-5 text-center">Credit Card</div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 border rounded p-5 text-center">Tabby</div>
+      </div>
+      <div class="row pt-5">
+        <h5>Personal Info</h5>
+      </div>
+      <div class="row pt-5">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            autocomplete="given-name"
+          />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            autocomplete="family-name"
+          />
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email"
+            autocomplete="email"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
