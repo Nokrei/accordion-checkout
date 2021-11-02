@@ -20,6 +20,9 @@ p {
 .bg-bright {
   background-color: #fff;
 }
+.custom-gradient {
+  background: linear-gradient(180deg, #f6f9f8 86%, #fff 86%);
+}
 .blue-text {
   color: #0052a2;
 }
