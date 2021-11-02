@@ -1,6 +1,5 @@
-:root {
-  --astrolabs-blue: #0052a2;
-  --icon-orange: #f18e71;
+* {
+  transition: 250ms;
 }
 p,
 h2,
@@ -31,7 +30,9 @@ p {
   height: 200px;
   width: 100%;
 }
-
+.pointer {
+  cursor: pointer;
+}
 .box-shadow {
   box-shadow: -1px 50px 78px -31px rgba(0, 0, 0, 0.64);
 }
