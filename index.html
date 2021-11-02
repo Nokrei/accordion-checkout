@@ -48,27 +48,32 @@
         <h3 class="text-center pb-5">Complete Your Purchase</h3>
         <div class="row bg-bright p-1 position-relative box-shadow">
           <div class="col">
-            <div class="row text-muted bg-darker p-1 p-sm-3">
+            <div
+              class="row text-muted bg-darker p-1 p-sm-3"
+              onClick="accordionOne()"
+            >
               <div class="col-4 col-sm-8">Item Name</div>
               <div class="col-4 col-sm-2">Item Price</div>
               <div class="col-4 col-sm-2 text-end">Actions</div>
             </div>
-            <div class="row p-1 p-sm-3 align-items-center">
-              <div class="col-sm-2 d-none d-sm-block">
-                <div class="placeholder-box"></div>
+            <div id="accordion-item-content">
+              <div class="row p-1 p-sm-3 align-items-center">
+                <div class="col-sm-2 d-none d-sm-block">
+                  <div class="placeholder-box"></div>
+                </div>
+                <div class="col-4 col-sm-6">
+                  <h5>Coding Bootcamp</h5>
+                  <p class="text-muted">Nov 12 - 25</p>
+                </div>
+                <div class="col-4 col-sm-2">AED 2500</div>
+                <div class="col-4 col-sm-2 text-end text-muted">Remove</div>
               </div>
-              <div class="col-4 col-sm-6">
-                <h5>Coding Bootcamp</h5>
-                <p class="text-muted">Nov 12 - 25</p>
-              </div>
-              <div class="col-4 col-sm-2">AED 2500</div>
-              <div class="col-4 col-sm-2 text-end text-muted">Remove</div>
-            </div>
-            <div class="row p-1 p-sm-3 text-end border-top">
-              <div class="col-sm-10"></div>
-              <div class="col-sm-2">
-                <p class="text-muted">Total</p>
-                <h5>AED 2500</h5>
+              <div class="row p-1 p-sm-3 text-end border-top">
+                <div class="col-sm-10"></div>
+                <div class="col-sm-2">
+                  <p class="text-muted">Total</p>
+                  <h5>AED 2500</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -81,21 +86,21 @@
           <span> Have a discount code? Click here to enter it. </span>
         </div>
       </div>
-      <div class="row pt-5">
+      <div class="row mt-5 p-1 p-sm-3 bg-darker" onclick="accordionTwo()">
         <h5>Payment Method</h5>
       </div>
-      <div class="row pt-5">
+      <div id="accordion-payment-content" class="row pt-5">
         <div class="col-5 border rounded p-3 p-sm-5 text-center">
           Credit Card
         </div>
         <div class="col-2"></div>
         <div class="col-5 border rounded p-3 p-sm-5 text-center">Tabby</div>
       </div>
-      <div class="row pt-5">
+      <div class="row mt-5 p-1 p-sm-3 bg-darker" onclick="accordionThree()">
         <h5>Personal Info</h5>
       </div>
       <div class="row pt-5">
-        <div class="input-group">
+        <div id="accordion-form-content" class="input-group">
           <input
             type="text"
             class="form-control"
@@ -117,5 +122,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
