@@ -18,6 +18,7 @@ const visible = {
   paddingBottom: "2rem",
   visibility: "visible",
   position: "relative",
+  zIndex: "1",
 };
 
 const accordionItem = document.getElementById("accordion-item-content");

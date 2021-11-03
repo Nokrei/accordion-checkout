@@ -36,3 +36,9 @@ p {
 .box-shadow {
   box-shadow: -1px 50px 78px -31px rgba(0, 0, 0, 0.2);
 }
+input {
+  max-height: 3rem;
+}
+#accordion-form-content {
+  height: auto !important;
+}
