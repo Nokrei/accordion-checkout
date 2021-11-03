@@ -1,11 +1,33 @@
-document.getElementById("accordion-payment-content").style.display = "none";
-document.getElementById("accordion-form-content").style.display = "none";
+// document.getElementById("accordion-payment-content").style.display = "none";
+// document.getElementById("accordion-form-content").style.display = "none";
+
+const hidden = {
+  height: "0",
+  opacity: "0",
+  padding: "0",
+  visibility: "hidden",
+  position: "relative",
+  zIndex: "-1",
+  margin: "0",
+};
+
+const visible = {
+  height: "180px",
+  opacity: "1",
+  paddingTop: "2rem",
+  paddingBottom: "2rem",
+  visibility: "visible",
+  position: "relative",
+};
 
 const accordionItem = document.getElementById("accordion-item-content");
 const accordionPayment = document.getElementById("accordion-payment-content");
 const accordionPaymentIcon = document.getElementById("accordion-payment-icon");
 const accordionForm = document.getElementById("accordion-form-content");
 const accordionFormIcon = document.getElementById("accordion-form-icon");
+
+Object.assign(accordionPayment.style, hidden);
+Object.assign(accordionForm.style, hidden);
 
 const accordionOne = () => {
   if (accordionItem.style.display != "none") {
@@ -16,21 +38,21 @@ const accordionOne = () => {
 };
 
 const accordionTwo = () => {
-  if (accordionPayment.style.display != "none") {
-    accordionPayment.style.display = "none";
+  if (accordionPayment.style.opacity != "0") {
+    Object.assign(accordionPayment.style, hidden);
     accordionPaymentIcon.style.transform = "rotate(0deg)";
   } else {
-    accordionPayment.style.display = "";
+    Object.assign(accordionPayment.style, visible);
     accordionPaymentIcon.style.transform = "rotate(180deg)";
   }
 };
 
 const accordionThree = () => {
-  if (accordionForm.style.display != "none") {
-    accordionForm.style.display = "none";
+  if (accordionForm.style.opacity != "0") {
+    Object.assign(accordionForm.style, hidden);
     accordionFormIcon.style.transform = "rotate(0deg)";
   } else {
-    accordionForm.style.display = "";
+    Object.assign(accordionForm.style, visible);
     accordionFormIcon.style.transform = "rotate(180deg)";
   }
 };
